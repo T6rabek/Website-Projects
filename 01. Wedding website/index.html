@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Oxunjon & Bahora</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    
+</head>
+<body>
+    <div class="locators">
+        <a href="#main"><i class="fa-solid fa-house" id="icons"></i></a></i><a href="#main" class="main-text">Asosiy</a>
+        <a href="#invitation"><i class="fa-regular fa-calendar" id="icons"></i><a href="#invitation" class="main-text">Taklifnoma</a>
+        <a href="#time"><i class="fa-regular fa-clock" id="icons"></i><a href="#time" class="main-text">Vaqt</a>
+        <a href="#location"><i class="fa-solid fa-location-dot" id="icons"></i><a href="#location" class="main-text">Manzil</a>
+        <audio src="music.mp3" autoplay loop controls></audio>
+    </div>
+
+    <section class="main" id="main">       
+        <h1>Xush kelibsiz!</h1>
+    </section>
+
+    <section class="invitation" id="invitation">
+        <h1>Taklifnoma</h1>
+        <video muted loop autoplay>
+            <source src="video.mp4">
+        </video>
+    </section>
+
+    <section class="time" id="time">
+        <h1>To'y bo'lganiga</h1>
+        <div class="countdown">
+            <div><span id="days">0</span> Kun</div>
+            <div><span id="hours">0</span> Soat</div>
+            <div><span id="minutes">0</span> Daqiqa</div>
+            <div><span id="seconds">0</span> Sekund</div>
+        </div>
+
+        <script src="index.js"></script>
+    </section>
+
+    <section class="location" id="location">
+        <div class="location-header">
+            <i class="fa-solid fa-location-dot"></i> Manzil
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12246.967828017723!2d66.26181701542035!3d39.880017622447276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d93337870b511%3A0xee1d8ba1fe311119!2sXasan%20Xusan%20To&#39;ylar%20Maskani!5e0!3m2!1sru!2s!4v1730546179345!5m2!1sru!2s" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+</body>
+</html>

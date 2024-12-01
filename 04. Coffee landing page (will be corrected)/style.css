@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+body    {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+
+.navigation img{
+    width: 70px;
+    margin: 10px 10px;
+
+
+}
+
+.navigation{
+    background-color: #deab5f;
+    height: 70px;
+   
+}
+.navigation ul{
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    list-style: none;
+    transform: translateY(-50px);
+    color: white;
+   
+}
+
+.navigation ul li{
+    padding: 0 40px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: inherit
+    
+}
+
+
+.navigation ul li:hover{
+    color: black;
+}
+
+
+
+
+.hero{
+    background-image: url(photos/hero.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+    font-family: "Playfair Display SC", serif;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1{
+    font-size: 4rem;
+    transform: translate(400px, -200px);
+    margin-bottom: 30px;
+
+}
+
+.hero h2{
+    font-size: 4rem;
+    transform: translate(-180px, 250px);
+    margin-top: 70px;
+}
+
+button{
+    background-color: #deab5f;
+    color: white;
+    padding: 5px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 1.5rem;
+   
+    margin: 30px;
+}
+
+.button1{
+    transform: translate(-550px, 380px);
+}
+button:hover{
+    background-color: transparent;
+    color: #deab5f;
+    cursor: pointer;
+}
+
+.our-story{
+    margin: 200px 40px;
+}
+
+.our-story{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.our-story h1{
+    color: #deab5f;
+    font-size: 3.5rem;
+    margin-top: 120px;
+}
+
+.our-story p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.our-story button{
+    transform: translate(-30px, -30px);
+}
+
+.perfect img{
+    width: 400px;
+    display: flex;
+    transform: translateX(1060px);
+    
+}
+
+.perfect{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.perfect h1{
+    color: #deab5f;
+    font-size: 3rem;
+    transform: translate(-230px, 30px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.perfect p{
+    color: white;
+    font-size: 1.5rem;
+    transform: translate(-225px, 60px);
+}
+
+.perfect button{
+    transform: translate(-260px, 60px);
+}
+
+.products{
+    margin-top: 100px;
+   
+}
+#products{
+    color: #deab5f;
+    font-size: 4.5rem;
+    transform: translateX(170px);
+    margin-bottom: 80px;
+
+}
+
+.products .mocha1 ul{
+    list-style: none;
+}
+.products .mocha1{
+    margin: 20px 170px;
+    color: white;
+    border: 2px solid #deab5f;
+    padding: 20px 15px;
+    width: fit-content ;
+    text-align: center;
+
+}
+
+.mocha1-img{
+    width: 70px;
+    transform: translate(260px, -355px);
+}
+
+.products .mocha2 ul{
+    list-style: none;
+}
+.products .mocha2{
+    margin: 20px 170px;
+    color: white;
+    border: 2px solid #deab5f;
+    padding: 20px 15px;
+    width: fit-content ;
+    text-align: center;
+
+}
+
+.mocha2-img{
+    width: 70px;
+    transform: translate(400px, -414px);
+}
+
+
+
+
+.products .mocha3 ul{
+    list-style: none;
+}
+.products .mocha3{
+    margin: 20px 170px;
+    color: white;
+    border: 2px solid #deab5f;
+    padding: 20px 15px;
+    width: fit-content ;
+    text-align: center;
+
+}
+
+.products img{
+    width: 70px;
+    transform: translate(260px, -355px);
+}
+
+
+.mocha3full{
+    transform: translate(800px, -825px);
+}
+
+.mocha2full{
+    transform: translate(400px, -414px);
+}
+
+hr {
+    margin-bottom: 20px;
+    border-color: #deab5f;
+    width: 500px;
+    margin: 0 auto;
+    transform: translate(-50px, -800px);
+  }
+
+.footer{
+display: flex;
+justify-content: space-between;
+transform: translateY(-750px);
+margin: 10px 50px;
+
+}
+
+.footer h1{
+    color: #deab5f;
+}
+
+.footer p{
+    color: white;
+}
+
+.para {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    transform: translateY(-700px);
+    margin-bottom: -100px;
+  }

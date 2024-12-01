@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.locators {
+    background: black;
+    height: auto; 
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.locators audio {
+    position: flex;
+    height: 18px;
+    width: 200px;
+    margin-left: auto; 
+    margin-right: 10px; 
+    padding-bottom: 2px;
+    top: 10px;
+}
+
+.main-text {
+    text-decoration: none;
+    font-family: helvetica;
+    padding: 8px;
+    color: white;
+}
+
+#icons {
+    padding-left: 10px; 
+    color: white;
+    align-items: left;
+}
+
+.main {
+    position: relative;
+    background-image: url(https://cdn.glitch.global/2148c983-d93a-4d2e-a463-4f8cf1e261ba/image.png?v=1730562424705);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;   
+}
+
+.main h1 {
+    text-align: center;
+    color: white;
+    margin: 50px 20px;
+    font-size: 5em; 
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.main h1:hover {
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+    cursor: pointer;
+}
+
+.invitation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.invitation h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    border: 2px solid white;
+    transition: 0.5s;
+    margin-top: 15px;
+}
+
+.invitation h1:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.invitation video {
+    width: 90%; 
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+#time {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.time h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    gap: 20px;
+    max-width: 90%; 
+    margin: 20px auto;
+}
+
+.countdown div {
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    transition: transform 0.5s;
+}
+
+.countdown div:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+}
+
+.countdown span {
+    display: block;
+    font-size: 1.5em; 
+    margin-bottom: 10px;
+}
+
+.location {
+    text-align: center;
+    color: white;
+    font-size: 2.5em; 
+    font-family: helvetica;
+}
+
+.location-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; 
+    margin-bottom: 20px;
+}
+
+.location i {
+    color: red; 
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .locators {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .main h1 {
+        font-size: 5em; 
+        margin: 50px 20px;
+    }
+
+    .invitation h1 {
+        font-size: 2em; 
+    }
+
+    .countdown div {
+        padding: 15px; 
+        font-size: 1em; 
+    }
+
+    .countdown span {
+        font-size: 1.2em; 
+    }
+
+    .location {
+        font-size: 2em; 
+    }
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1em; 
+}
+
+p a {
+    text-decoration: none;
+    color: cyan;
+}

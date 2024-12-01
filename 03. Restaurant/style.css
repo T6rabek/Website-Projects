@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    overflow-x: hidden;
+    
+}
+
+header {
+    font-family: sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), 
+    url('img/home_bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    height: 70px;
+}
+
+.logo img {
+    width: 90px;
+    margin: 3px 15px;
+    transition: transform 0.7s ease;
+}
+
+.logo img:hover {
+    animation: spin 0.7s forwards;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 4px;
+    position: relative;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all ease 0.5s;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all ease 0.5s;
+}
+
+.navbar a:hover:before, 
+.navbar a:hover:after {
+    transform: scaleX(1);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.title {
+    color: white;
+    padding-top: -140px;
+}
+
+.title h1{
+    font-size: 2rem;
+    line-height: 50px;
+    font-family: 'Quicksand';
+}
+
+.title h1 span {
+    color: #c3b37a;
+}
+
+.title p {
+    text-align: center;
+    font-family: 'Quicksand';
+}
+
+.title .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 6px;
+    border: 2px solid white;
+    padding: 5px 8px;
+    background: #000;
+    font-weight: bold;
+    transition: all ease 0.5s;
+}
+
+.buttons a:hover {
+    background: rgba(255, 255, 255);
+    color: #000;
+}
+
+.banner {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f1ed;
+    padding-bottom: 20px;
+}
+
+.banner h1{
+    color: #000;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.banner p {
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.banner .tab-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-container button {
+    padding: 10px;
+    font-weight: 550;
+    font-size: 1rem;
+    background-color: #c3b37a;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.tab-container .tab.active {
+    background-color: rgb(31, 31, 133);
+    color: #fff;
+}
+
+.below-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+
+}
+
+.below-tab p {
+    padding-right: 100px;
+    padding-left: 80px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.below-tab img {
+    margin-right: 40px;
+}
+
+.offers {
+    background: #333232;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.offers .title h1 {
+    color: #c3b37a;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 30px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.image-container .img-items .imgs img {
+    width: 150px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    transform: translateX(135px);
+}
+
+.image-container .img-items .texts p{
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin-left: 20px;    
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.texts h1 {
+    color: #fff;
+    text-align: center;
+    font-family: 'Quicksand';
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.texts .p2 span {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    color: #fff;
+}
+
+.texts .p2 {
+    color: #c3b37a !important;
+}
+
+
+.menu {
+    background-color: #f3f1ed;
+    
+}
+
+.menu-title {
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Quicksand';
+}
+
+.menu-title h1 {
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+
+.menu-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 30px 30px;
+}
+
+.menu-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-itself img{
+    width: 100px;
+    border-radius: 59%;
+}
+
+
+.menu-img .menu-img-title {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: sans-serif;
+}
+
+.menu-img-title h2 {
+    font-size: 1rem;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu-img-title h2 span {
+    color: #c3b37a;
+    word-spacing: 20%;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.menu-img-title p {
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+.menu-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.menu-btns button{
+    background: #000;
+    color: #fff;
+    padding: 7px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 3px;
+    transition: all 0.5s ease;
+}
+
+.menu-btns button:hover {
+    color: #000;
+    background: #fff;
+}
+
+.time {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0,0,0,0)), 
+    url('img/daytime_bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.time-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 35px;
+}
+
+.time-img-container {
+   text-align: center;
+}
+
+.time-img-container .time-img-title {
+    color: #f4eeee;
+    font-family: 'Quicksand';
+}
+
+
+.contact {
+    background: #f3f1ed;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 70px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    padding-bottom: 30px;
+    font-family: 'Quicksand';
+}
+
+.address {
+    padding-bottom: 30px;
+}
+
+.address h3 {
+    padding-bottom: 20px;
+    color: #041966;
+    font-size: 2rem;
+}
+
+.address i{
+    color: #c3b37a;
+}
+
+.address p {
+    font-family: sans-serif;
+    padding-bottom: 5px;
+}
+
+.working {
+    transform: translate(-260px, 150px);
+}
+
+.working h3 {
+    padding-bottom: 10px;
+    color: #041966;
+    font-size: 2rem;
+}
+
+.working p {
+    font-family: sans-serif;
+    padding-bottom: 5px;
+}
+
+.coming-soon {
+    padding: 80px 20px;
+}
+
+.coming-soon-title {
+    color: #041966;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
+.countdown {
+    display: flex;
+}
+
+.day {
+    background-color: #041966;
+    color: #fff;
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.hour {
+    background-color: #041966;
+    color: #fff;
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.minute {
+    background-color: #041966;
+    color: #fff;
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.second {
+    background-color: #041966;
+    color: #fff;
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #030f39;
+    padding-bottom: 30px;
+}
+
+footer p {
+    color: #fff;
+    font-family: 'Quicksand';
+    text-align: center;
+    padding-top: 30px;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c3b37a;
+    border-radius: 100px;
+    
+}
