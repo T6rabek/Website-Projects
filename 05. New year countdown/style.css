@@ -22,6 +22,13 @@
     right: 0;
     z-index: 50;
     background: #000;
+    color: #fff;
+    
+}
+
+marquee {
+  color: white;
+
 }
 
 .loader {
@@ -208,6 +215,12 @@
     to {
       transform: translateY(105vh);
     }
+  }
+
+  marquee {
+    color: white;
+    font-size: 2rem;
+    z-index: 1;
   }
   
   /* social/share menu */

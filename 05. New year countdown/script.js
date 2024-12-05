@@ -2,7 +2,7 @@ const loaderWrapper = document.querySelector('.loader-wrapper')
 
 setTimeout(() => {
     loaderWrapper.style.display = 'none'
-}, 0)
+}, 1000)
 
 let days = document.getElementById('days');
 let hours = document.getElementById('hours');
