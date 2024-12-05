@@ -41,101 +41,101 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    //Loader
+    Loader
 
-    // const loader = document.querySelector('.loader-container')
-    //     setTimeout(() => {
-    //       loader.style.display = 'none'
-    //      }, 0)
-
-
-//     const deadline = '2025-10-09'
-
-//     function getRemainingTime(endtime) {
-//        const time = Date.parse(endtime) - Date.parse(new Date()),
-//         days = Math.floor(time / (1000 * 60 * 60 * 24)),
-//         hours = Math.floor(time/ (1000 * 60 *60) % 24),
-//         minutes = Math.floor(time / (1000 * 60) % 60), 
-//         seconds = Math.floor((time / 1000) % 60)
-
-//     return {
-//         totalTime: time,
-//         days, 
-//         hours, 
-//         minutes,
-//         seconds,
-//     }
+    const loader = document.querySelector('.loader-container')
+        setTimeout(() => {
+          loader.style.display = 'none'
+         }, 0)
 
 
-//     }
-
-
-//     function setClock(selector, endtime) {
-//         const timer = document.querySelector(selector),
-//             days = timer.querySelector('#day')
-//             hours = timer.querySelector('#hour')
-//             minutes = timer.querySelector('#minute')
-//             seconds = timer.querySelector('#second')
-//             timeInterval = setInterval(updateClock, 1000)
-
-//         function updateClock() {
-//             const time = getRemainingTime(endtime) 
-
-//             days.textContent = time.days
-//             hours.textContent = time.hours
-//             minutes.textContent = time.minutes
-//             seconds.textContent = time.seconds
-
-//             if(time.totalTime<=0) {
-//                 clearInterval(timeInterval)
-//             }
-//         }
-
-//     }
-
-//     setClock('.countdown', deadline)
-    
     const deadline = '2025-10-09'
 
     function getRemainingTime(endtime) {
-        const time = Date.parse(endtime) - Date.parse(new Date()),
-            days = Math.floow(time / (1000 * 60 * 60 * 24)),
-            hours = Math.floor(time / (1000 * 60 * 60) % 24),
-            minutes = Math.floor(time / (1000 * 60) % 60)
-            seconds = Math.floor((time / 1000) % 60)
-    }
-
+       const time = Date.parse(endtime) - Date.parse(new Date()),
+        days = Math.floor(time / (1000 * 60 * 60 * 24)),
+        hours = Math.floor(time/ (1000 * 60 *60) % 24),
+        minutes = Math.floor(time / (1000 * 60) % 60), 
+        seconds = Math.floor((time / 1000) % 60)
 
     return {
-        totalTime: time, 
-        days,
-        hours,
-        minutes, 
-        seconds
+        totalTime: time,
+        days, 
+        hours, 
+        minutes,
+        seconds,
     }
 
-    function setClock(selector, endtime) {
-        const timer = document.querySelector(selector),
-            days = timer.querySelector('#day'),
-            hours = timer.querySelector('#hour'),
-            minutes = timer.querySelector('#minute'),
-            seconds = timer.querySelector('#second'),
-            timeInterval = setInterval(updateClock, 1000)
+
+    }
 
 
-            function updateClock() {
-                const time = getRemainingTime(endtime)
+// //     function setClock(selector, endtime) {
+// //         const timer = document.querySelector(selector),
+// //             days = timer.querySelector('#day')
+// //             hours = timer.querySelector('#hour')
+// //             minutes = timer.querySelector('#minute')
+// //             seconds = timer.querySelector('#second')
+// //             timeInterval = setInterval(updateClock, 1000)
 
-                days.textContent = time.days
-                hours.textContent = time.hours
-                minutes.textContent = time.minutes
-                seconds.textContent = time.seconds
+// //         function updateClock() {
+// //             const time = getRemainingTime(endtime) 
+
+// //             days.textContent = time.days
+// //             hours.textContent = time.hours
+// //             minutes.textContent = time.minutes
+// //             seconds.textContent = time.seconds
+
+// //             if(time.totalTime<=0) {
+// //                 clearInterval(timeInterval)
+// //             }
+// //         }
+
+// //     }
+
+// //     setClock('.countdown', deadline)
+    
+//     const deadline = '2025-10-09'
+
+//     function getRemainingTime(endtime) {
+//         const time = Date.parse(endtime) - Date.parse(new Date()),
+//             days = Math.floow(time / (1000 * 60 * 60 * 24)),
+//             hours = Math.floor(time / (1000 * 60 * 60) % 24),
+//             minutes = Math.floor(time / (1000 * 60) % 60)
+//             seconds = Math.floor((time / 1000) % 60)
+//     }
+
+
+//     return {
+//         totalTime: time, 
+//         days,
+//         hours,
+//         minutes, 
+//         seconds
+//     }
+
+//     function setClock(selector, endtime) {
+//         const timer = document.querySelector(selector),
+//             days = timer.querySelector('#day'),
+//             hours = timer.querySelector('#hour'),
+//             minutes = timer.querySelector('#minute'),
+//             seconds = timer.querySelector('#second'),
+//             timeInterval = setInterval(updateClock, 1000)
+
+
+//             function updateClock() {
+//                 const time = getRemainingTime(endtime)
+
+//                 days.textContent = time.days
+//                 hours.textContent = time.hours
+//                 minutes.textContent = time.minutes
+//                 seconds.textContent = time.seconds
             
-                if(time.totalTime <= 0) {
-                    clearInterval(timeInterval)
-            }
-    }
+//                 if(time.totalTime <= 0) {
+//                     clearInterval(timeInterval)
+//             }
+//     }
 
     
-})
+// })
 
